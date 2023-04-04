@@ -20,8 +20,8 @@ var powercoins,powercoinsImage
 function preload()
 {
 	backgroundImg = loadImage("background.jpg")
-	rocket1 = loadImage("rocket1.png")
-	rocket2 = loadImage("rocket2.png")
+	rocket1_img = loadImage("rocket1.png")
+	rocket2_img= loadImage("rocket2.png")
 	fuelimage = loadImage("fuel.png")
 	lifeimage =loadImage("life.png")
 	meteor = loadAnimation("meteor_speed1.gif")
@@ -60,12 +60,12 @@ function draw() {
   rocket1 = createSprite(width / 2 - 50, height - 100);
     rocket1.addImage("rocket1", rocket1_img);
    // rocket1.addImage("explosion",explosion)
-    rocket1.scale = 0.07;
+    rocket1.scale = 0.31;
     rocket1.display()
     rocket2 = createSprite(width / 2 + 100, height - 100);
     rocket2.addImage("rocket2", rocket2_img);
     //rocket2.addImage("explosion",explosion)
-    rocket2.scale = 0.07;
+    rocket2.scale = 0.51;
 	rocket2.display()
 }
   
